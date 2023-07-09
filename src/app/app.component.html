@@ -56,3 +56,23 @@
     </div>
   </div>
 </div>
+
+<h3>ngSwitch</h3>
+<ul>
+  <li>switch between different DOMs based on some value</li>
+</ul>
+
+<div class="example">
+  <div class="box vertical">
+    <input type="number" name="luckyNumber" [(ngModel)]="luckyNumber" />
+
+    <div [ngSwitch]="luckyNumber">
+      <p *ngSwitchCase="1">Strong</p>
+      <p *ngSwitchCase="2">Weak</p>
+      <p *ngSwitchCase="3">Intelligent</p>
+      <p *ngSwitchCase="4">Fool</p>
+      <p *ngSwitchCase="5">Brave</p>
+      <p *ngSwitchDefault>Enter numbers from 1 to 5</p>
+    </div>
+  </div>
+</div>

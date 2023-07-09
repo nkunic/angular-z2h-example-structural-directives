@@ -26,4 +26,9 @@ export class AppComponent {
     'Nine',
     'Ten',
   ];
+
+  // ngSwitch
+  luckyNumber = 0;
+
+  
 }
