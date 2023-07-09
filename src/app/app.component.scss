@@ -25,6 +25,10 @@
   }
 }
 
+.example + .example {
+  margin-top: 2.5rem;
+}
+
 .success {
   background-color: green;
 }

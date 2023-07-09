@@ -5,6 +5,7 @@
     Ang. components are also directives with the template (trough component we
     are instructing angular to place HTML & TS logic in the place of selector)
   </li>
+  <li>can't use 2 structural directives on the same DOM!</li>
 </ul>
 
 <h2>2 types of inbuilt directives in angular:</h2>
@@ -52,6 +53,13 @@
     <div>
       <p *ngFor="let number of numbers; let i = index">
         {{ i + 1 }} - {{ number }}
+      </p>
+    </div>
+    <div>
+      <p *ngFor="let number of numbers; let i = index">
+        <span *ngIf="(i + 1) % 2 === 0">
+        {{ i + 1 }} - {{ number }}
+        </span>
       </p>
     </div>
   </div>
