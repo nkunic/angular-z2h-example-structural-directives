@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+  isApproved = true;
 
-
+  approve(status) {
+    this.isApproved = status;
+  }
 }
