@@ -6,7 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-
   // ngIf
   isApproved = true;
 
@@ -26,7 +25,5 @@ export class AppComponent {
     'Eight',
     'Nine',
     'Ten',
-
-  ]
-
+  ];
 }
