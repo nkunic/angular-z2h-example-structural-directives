@@ -17,6 +17,9 @@
 </ol>
 
 <h2>Structural directives</h2>
+<ul>
+  <li>* - change DOM</li>
+</ul>
 
 <h3>ngIf</h3>
 <ul>
@@ -24,7 +27,7 @@
 </ul>
 
 <div class="example">
-  <div class="box">
+  <div class="box vertical">
     <div>
       <button class="success" (click)="approve(true)">Approve</button>
       <button class="danger" (click)="approve(false)">Reject</button>
@@ -38,3 +41,18 @@
 <ul>
   <li>loop trough ann array and display that in the html</li>
 </ul>
+
+<div class="example">
+  <div class="box horizontal">
+    <div>
+      <p *ngFor="let number of numbers">
+        {{ number }}
+      </p>
+    </div>
+    <div>
+      <p *ngFor="let number of numbers; let i = index">
+        {{ i + 1 }} - {{ number }}
+      </p>
+    </div>
+  </div>
+</div>
