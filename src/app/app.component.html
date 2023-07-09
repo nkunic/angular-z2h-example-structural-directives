@@ -33,8 +33,11 @@
       <button class="success" (click)="approve(true)">Approve</button>
       <button class="danger" (click)="approve(false)">Reject</button>
     </div>
-    <p *ngIf="isApproved">Your app has been approved</p>
-    <p *ngIf="!isApproved">Your app has been rejected</p>
+    <p>
+      Your app has been
+      <span *ngIf="isApproved">approved</span>
+      <span *ngIf="!isApproved">rejected</span>
+    </p>
   </div>
 </div>
 
@@ -57,9 +60,7 @@
     </div>
     <div>
       <p *ngFor="let number of numbers; let i = index">
-        <span *ngIf="(i + 1) % 2 === 0">
-        {{ i + 1 }} - {{ number }}
-        </span>
+        <span *ngIf="(i + 1) % 2 === 0"> {{ i + 1 }} - {{ number }} </span>
       </p>
     </div>
   </div>
