@@ -19,9 +19,14 @@
 <h2>Structural directives</h2>
 
 <h3>ngIf</h3>
+<ul>
+  <li>hide/show elements in DOM dynamicly</li>
+</ul>
 
 <button class="success" (click)="approve(true)">Approve</button>
 <button class="danger" (click)="approve(false)">Reject</button>
 
 <p *ngIf="isApproved">Your app has been approved</p>
 <p *ngIf="!isApproved">Your app has been rejected</p>
+
+<h3>ngFor</h3>
